@@ -1,0 +1,39 @@
+----------------------------------------------------------
+ENUNCIADO:
+  Desarrolle un algoritmo que aplique un 10% de descuento
+  en la compra de un usuario, en caso de poseer carnet de
+  membresia. No olvide solicitar el nombre del mismo y
+  validar el monto de la compra
+----------------------------------------------------------
+
+Algoritmo Golden Member
+Inicio
+  var nombre: Cadena;
+  var tiene_carnet: Booleano;
+  var monto_compra, descuento, monto_final: Real;
+
+  Mostrar << "Ingrese el nombre del usuario";
+  Leer >> nombre;
+  Mostrar << "Ingrese el monto de la compra";
+  Leer >> monto_compra;
+  Mostrar << "¿Posee el usuario carnet de membresia? (0: no, 1: si)";
+  Leer >> tiene_carnet;
+
+  Si (monto_compra > 0) Entonces;
+    Si (tiene_carnet = 1) Entonces;
+      descuento = (monto_compra * 10) / 100;
+      monto_final = monto_compra - descuento;
+
+      Mostrar << "El usuario ", nombre, " es miembro. Se le ha aplicado un 10% de descuento";
+      Mostrar << "Monto de la compra: ", monto_compra;
+      Mostrar << "Monto a pagar: ", monto_final;
+
+      Sino 
+        Mostrar << "El usuario ", nombre, " no es miembro. No se le ha aplicado ningun descuento";
+        Mostrar << "Monto a pagar: ", monto_compra;
+    Fin_Si
+
+    Sino
+      Mostrar << "Ha ingresado un monto invalido";
+  Fin_Si
+Fin
