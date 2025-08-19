@@ -1,0 +1,38 @@
+------------------------------------------------------------
+ENUNCIADO:
+  Se necesita un algoritmo que solicite los numeros de tres
+  dados y muestre un mensaje dependiendo de la cantidad de 6
+  obtenidos:
+
+  - 6 en los tres dados: "Excelente"
+  - 6 en dos dados: "Muy bien"
+  - 6 en un solo dado: "Regular"
+  - Ningun 6: "Pesimo"
+
+  Esto solo debe realizarse con datos previamente validados.
+  En caso de haber datos invalidos, notificar al usuario y
+  finalizar el programa
+------------------------------------------------------------
+
+Algoritmo Armemos un casino y hagamonos ricos
+Inicio
+  var dado1, dado2, dado3: Entero;
+
+  Mostrar << "Ingrese el dado 1";
+  Leer >> dado1;
+  Mostrar << "Ingrese el dado 2";
+  Leer >> dado2;
+  Mostrar << "Ingrese el dado 3";
+  Leer >> dado3;
+  
+  En_Caso (dado1 > 0) AND (dado2 > 0) AND (dado3 > 0) Sea;
+    Caso (dado1 = 6) AND (dado2 = 6) AND (dado3 = 6);
+      Mostrar << "Excelente";
+    Caso (dado1 = 6 AND dado2 = 6) OR (dado1 = 6 AND dado3 = 6) OR (dado2 = 6 AND dado3 = 6);
+      Mostrar << "Muy bien";
+    Caso (dado1 = 6) OR (dado2 = 6) OR (dado3 = 6);
+      Mostrar << "Regular";
+    Otro_Caso
+      Mostrar << "Pésimo";
+  Fin_Caso
+Fin
