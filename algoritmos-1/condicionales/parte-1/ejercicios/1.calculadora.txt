@@ -1,0 +1,12 @@
+-----------------------------------------------------------------------------------
+ENUNCIADO
+  Cree un algoritmo que solicite dos numeros y muestre las siguientes operaciones:
+
+  - La suma de ambos
+  - El primero menos el segundo
+  - El primero multiplicado por el segundo
+  - La division del primero entre el segundo
+
+  Tome en cuenta que no se admite ningun numero negativo para los calculos y que 
+  algunas operaciones requieren una validacion
+-----------------------------------------------------------------------------------

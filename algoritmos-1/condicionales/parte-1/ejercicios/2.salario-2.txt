@@ -1,0 +1,17 @@
+-----------------------------------------------------------------------------------------
+ENUNCIADO:
+  Buenas noticias. Nos han comprado el programa que calcula salarios. Sin embargo hay
+  un detalle. Nos estan reportando que algunos empleados estan introduciendo datos que
+  no tienen sentido, como numeros negativos o ceros. Debemos hacerle una mejora para
+  evitar eso utilizando estructuras condicionales
+
+  Por si lo olvidaste, aca esta el enunciado anterior:
+
+  Desarrolle un algoritmo que solicite el nombre de un empleado, la cantidad de horas que
+  dicho empleado ha trabajado y su salario por hora. El programa debe calcular el salario
+  total que le corresponde al empleado. Ademas, considerando que estamos en epoca de
+  bonificaciones, debe calcular el monto de la misma, que es igual al 10% del salario
+  total, y mostrar todos los datos al empleado
+
+  Pero ahora con validacion de los datos que lo requieran. :D
+-----------------------------------------------------------------------------------------
