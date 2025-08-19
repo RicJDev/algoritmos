@@ -75,8 +75,8 @@ Fin
 
 ## Ejemplo con ejercicio basico
 
-### Enunciado:
+**Enunciado**:
 
-Desarrolle un algoritmo que solicite el nombre de un empleado, la cantidad de horas que dicho empleado ha trabajado y su salario por hora. El programa debe calcular el salario total que le corresponde al empleado. Ademas, considerando que estamos en epoca de bonificaciones, debe calcular el monto de la misma, que es igual al 10% del salario total, y mostrar todos los datos al empleado
+> Desarrolle un algoritmo que solicite el nombre de un empleado, la cantidad de horas que dicho empleado ha trabajado y su salario por hora. El programa debe calcular el salario total que le corresponde al empleado. Ademas, considerando que estamos en epoca de bonificaciones, debe calcular el monto de la misma, que es igual al 10% del salario total, y mostrar todos los datos al empleado
 
 [Ver solucion](./salario.txt) 
