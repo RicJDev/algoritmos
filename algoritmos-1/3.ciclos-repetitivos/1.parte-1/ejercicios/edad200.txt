@@ -1,0 +1,10 @@
+--------------------------------------------------------------------------------
+ENUNCIADO:
+
+  Realizar un algoritmo que permita ingresar la edad de 200 personas,
+  validando que la edad sea un número entero mayor o igual a 1. El algoritmo
+  debe contar cuántas personas son mayores o iguales de 18 años y cuántas son
+  menores de edad. Al finalizar la lectura de las 200 edades, el algoritmo
+  debe mostrar el total de personas mayores de edad y el total de personas
+  menores de edad.
+--------------------------------------------------------------------------------

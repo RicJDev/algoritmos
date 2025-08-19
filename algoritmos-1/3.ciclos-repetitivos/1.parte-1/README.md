@@ -84,7 +84,7 @@ Mostrar << "Bien. Hora de lanzar los dados..."
 ```
 ### Variables de iteracion
 
-Iterar es repetir hasta obtener un resultado o hasta llegar al final de algo. Una variable de iteracion es una variable auxiliar que nos permite hacer repeticiones a lo largo de un ciclo.
+Iterar es repetir hasta obtener un resultado o hasta llegar al final de algo. Una **variable de iteracion** es una variable auxiliar que nos permite hacer repeticiones a lo largo de un ciclo.
 
 Por ejemplo, podemos mostrar los numeros del 1 al 100 con un `Mientras-Hacer` utilizando una variable a la que llamaremos `i`.
 

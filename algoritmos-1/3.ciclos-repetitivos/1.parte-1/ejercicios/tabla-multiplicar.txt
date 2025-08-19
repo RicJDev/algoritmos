@@ -1,0 +1,7 @@
+--------------------------------------------------------------------------------
+ENUNCIADO:
+  Desarrollar un algoritmo que solicite al usuario ingresar un número entero no
+  negativo y valide que el número sea cero o positivo. Luego, el algoritmo debe
+  generar y mostrar la tabla de multiplicar de ese número desde el 1 hasta el 10,
+  indicando en cada línea el resultado de la multiplicación.
+--------------------------------------------------------------------------------

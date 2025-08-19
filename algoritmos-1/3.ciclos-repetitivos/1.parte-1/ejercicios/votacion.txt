@@ -1,0 +1,11 @@
+--------------------------------------------------------------------------------
+ENUNCIADO:
+  Desarrollar un algoritmo que permita registrar votos para tres candidatos a
+  la gobernación. El programa debe mostrar los nombres de los candidatos con un
+  número asociado (1, 2 o 3), y solicitar al usuario que ingrese el número
+  correspondiente al candidato de su preferencia. Se debe validar que el número
+  ingresado corresponda a uno de los candidatos disponibles. El proceso de
+  votación continuará hasta que el usuario decida no ingresar más votos.
+  Finalmente, el algoritmo debe mostrar el total de votos recibidos por cada 
+  candidato y el total de votos registrados.
+--------------------------------------------------------------------------------
