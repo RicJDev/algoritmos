@@ -1,0 +1,56 @@
+----------------------------------------------------------------------------------
+ENUNCIADO
+  Escribir un programa que reciba las longitudes de los tres lados de un triangulo,
+  validando que sean mayores a 0 y que la suma de los lados menores sea mayor al
+  lado mayor, y determine el tipo:
+
+   - "Equilatero" si los tres lados son iguales.
+   - "Isosceles" si dos lados son iguales.
+   - "Escaleno" si los tres lados son diferentes.
+   - "No es un triangulo" si no existe el triangulo.
+
+  En caso de datos invalidos, mostrar mensaje de error y terminar.
+----------------------------------------------------------------------------------
+
+Algoritmo Triangulos de chill
+Inicio
+  var a, b, c: Real;
+  var mayor, suma: Real;
+
+  Mostrar << "Ingrese lado 1: ";
+  Leer >> a;
+  Mostrar << "Ingrese lado 2: ";
+  Leer >> b;
+  Mostrar << "Ingrese lado 3: ";
+  Leer >> c;
+  
+  Si (a < 1 Or b < 1 Or c < 1) Entonces;
+    Mostrar << "Datos no validos";
+
+    Sino
+      mayor = a;
+      Si (c > mayor) Entonces;
+        mayor = c;
+      Fin_Si
+      Si (b > mayor) Entonces;
+        mayor = b;
+      Fin_Si
+      Si (a > mayor) Entonces;
+        mayor = a;
+      Fin_Si
+
+      suma = (a + b + c) - mayor;
+
+      En_Caso (suma > mayor) Sea;
+        Caso (a = b And b = c And a = c);
+          Mostrar << "Triangulo equilatero";
+        Caso (a = b Or b = c Or a = c);
+          Mostrar << "Triangulo isoceles";
+        Caso (a != b And b != c And a != c);
+          Mostrar << "Triangulo escaleno";
+        Otro_Caso
+          Mostrar << "No hay triangulo";
+      Fin_Caso
+  Fin_Si
+Fin
+

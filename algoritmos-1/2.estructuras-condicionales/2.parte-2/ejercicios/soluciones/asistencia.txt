@@ -1,0 +1,50 @@
+----------------------------------------------------------------------
+ENUNCIADO:
+  Escribir un programa que pida la nota final (del 1 a 100), la cantidad
+  de clases dadas y la cantidad de asistencias de un alummno. Debera
+  calcular el porcentaje de asistencia y a partir de ahi mostrar uno
+  de los siguientes mensajes:
+
+  - "Aprobado con honores" si la nota es mayor o igual a 90 y la
+  asistencia es mayor o igual al 95%.
+  - "Aprobado" si la nota es mayor o igual a 60 y la asistencia es 
+  mayor o igual al 75%.
+  - "Reprobado por nota" si la nota es menor a 60, sin importar la 
+  asistencia.
+  - "Reprobado por asistencia" si la asistencia es menor a 75%, sin
+  importar la nota.
+
+  Validar los datos ingreasados. En caso de error, finalizar el programa
+  y notificar
+----------------------------------------------------------------------
+
+Algoritmo como_saber_si_raspo
+Inicio
+  var nota_final, clases, asistencias: Entero;
+  var porcentaje_asistencia: Real;
+
+  Mostrar << "Ingrese la nota final del alumno";
+  Leer >> nota_final;
+  Mostrar << "Ingrese la cantidad de clases";
+  Leer >> clases;
+  Mostrar << "Ingrese las asistencias del alumno"
+  Leer >> asistencias;
+
+  Si (nota_final < 1) Or (clases < )1 Or (asistencias < 0) Entonces;
+    Mostrar << "Datos no validos";
+
+    Sino
+      porcentaje_asistencia = 100 * asistencias / clases;
+
+      En_Caso (asistencias >= 0) Sea;
+        Caso (nota_final >= 90 And porcentaje_asistencia >= 95);
+          Mostrar << "Aprobado con honores";
+        Caso (nota_final >= 60 And porcentaje_asistencia >= 75);
+          Mostrar << "Aprobado";
+        Caso (nota_final < 60);
+          Mostrar << "Reprobado por nota";
+        Caso (porcentaje_asistencia < 75);
+          Mostrar << "Reprobado por asistencia";
+      Fin_Caso
+  Fin_Si
+Fin

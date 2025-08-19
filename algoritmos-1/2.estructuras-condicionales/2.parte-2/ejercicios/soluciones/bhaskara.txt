@@ -1,0 +1,44 @@
+-------------------------------------------------------------
+ENUNCIADO:
+  Sabiendo que una ecuacion de segundo grado como esta:
+                    ax² + bx + c = 0
+
+  Se puede resolver utilizando la siguiente formula:
+              x = (-b ± √(b² - 4ac)) / 2a
+
+  Cree un algoritmo que solicite los coeficientes a, b y c.
+  Luego calcule las soluciones reales para la ecuacion. Tome
+  en cuenta que para que una solucion sea real, el radicando 
+  dentro de la raiz debe ser un numero positivo.
+-------------------------------------------------------------
+
+Inicio
+  var a, b, c: Real;
+  var discriminante, resultado1, resultado2: Real;
+
+  Mostrar << "Ingrese el coeficiente a";
+  Leer >> a;
+  Mostrar << "Ingrese el coeficiente b";
+  Leer >> b;
+  Mostrar << "Ingrese el coeficiente c";
+  Leer >> c;
+
+  Si (a = 0) Entonces;
+    Mostrar << "El primer coeficiente no puede ser 0";
+
+    Sino
+      discriminante = (b ^ 2) - 4 * a * c;
+
+      Si (discriminante < 0) Entonces;
+        Mostrar << "No hay soluciones reales para estos datos";
+
+        Sino
+          resultado1 = [(-1 * b) + discriminante ^ (1 / 2)] / 2 * a;
+          resultado2 = [(-1 * b) - discriminante ^ (1 / 2)] / 2 * a;
+
+          Mostrar << "Resultados reales para x: ";
+          Mostrar << resultado1;
+          Mostrar << resultado2;
+      Fin_Si
+  Fin_Si
+Fin
