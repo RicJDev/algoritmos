@@ -1,0 +1,37 @@
+------------------------------------------------------------------
+ENUNCIADO:
+  Se solicita un programa que pida la edad y si la persona tiene
+  entrada VIP (Sí/No) y muestre:
+
+  - "Acceso total" si tiene entrada VIP, sin importar la edad.
+  - "Acceso restringido" si no tiene VIP y tiene 18 años o más.
+  - "No permitido" si no tiene VIP y es menor de 18.
+
+  Validar que la edad sea un número positivo y la respuesta de VIP
+  sea válida (Sólo Sí o No).
+------------------------------------------------------------------
+
+Algoritmo VIP
+Inicio
+  var edad: Entero;
+  var tieneVIP: Booleano;
+
+  Mostrar << "Ingrese su edad";
+  Leer >> edad;
+  Mostrar << "Tiene VIP? (0: no, 1: si)";
+  Leer >> tieneVIP;
+
+  Si (edad < 1) Entonces;
+    Mostrar << "Edad no valida";
+
+    Sino
+      En_Caso(edad >= 1) Sea;
+        Caso (tieneVIP = 1);
+          Mostrar << "Acceso total";
+        Caso (tieneVIP = 0 And edad >= 18);
+          Mostrar << "Acceso restringido";
+        Caso (tieneVIP = 0 And edad < 18);
+          Mostrar << "No permitido";
+      Fin_Caso
+  Fin_Si
+Fin
