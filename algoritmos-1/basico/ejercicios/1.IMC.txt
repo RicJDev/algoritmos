@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------
+  ENUNCIADO:
+
+  Escribe un programa que permita calcular el índice de masa corporal
+  (IMC) de una persona. El programa debe pedir al usuario:
+
+  - Su peso (en kilogramos).
+  - Su altura (en metros).
+
+  El programa debe calcular y mostrar el IMC usando la siguiente fórmula:
+  
+  IMC = peso / altura ^ 2  
+-------------------------------------------------------------------------
+
+Algoritmo IMC
+Inicio
+  var peso, altura, imc: Real;
+
+  Mostrar << "Introduzca su peso";
+  Leer >> peso;
+  Mostrar << "Introduzca su altura";
+  Leer >> altura;
+
+  imc = peso / altura ^ 2;
+  Mostrar << "El resultado es ", imc;
+Fin

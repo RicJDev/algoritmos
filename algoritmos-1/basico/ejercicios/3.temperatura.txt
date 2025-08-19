@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------
+  ENUNCIADO:
+  Diseña un programa que convierta temperaturas entre diferentes escalas.
+
+  El programa debe pedir al usuario:
+  - Una temperatura en grados Celsius.
+  - Una temperatura en grados Fahrenheit.
+
+  El programa debe calcular y mostrar:
+  - La conversión de la temperatura en Celsius a Fahrenheit y Kelvin.
+  - La conversión de la temperatura en Fahrenheit a Celsius y Kelvin.
+  
+  Las fórmulas son:
+  - De Celsius a Fahrenheit: F = C × (9 / 5) + 32
+  - De Fahrenheit a Celsius: C = (F − 32) × (5 / 9)
+  - De Celsius a Kelvin: K = C + 273.15
+-------------------------------------------------------------------------

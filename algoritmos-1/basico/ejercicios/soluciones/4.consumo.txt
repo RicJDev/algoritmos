@@ -1,0 +1,37 @@
+Algoritmo consumo de gasolina
+Inicio
+  var kilometros_recorridos, precio_gasolina_por_litro, dinero_gastado_en_gasolina, horas, minutos: Real;
+  var velocidad_kmh, velocidad_ms: Real;
+  var litros_consumidos_total, litros_consumidos_km, litros_consumidos_100km: Real;
+  var precio_gasolinaKm, precio_gasolina100Km: Real;
+  // var tiempo_total: Real;
+
+  Mostrar << "Ingrese los kilómetros recorridos: ";
+  Leer >> kilometros_recorridos;
+  Mostrar << "Ingrese el precio de la gasolina por litro: ";
+  Leer >> precio_gasolina_por_litro;
+  Mostrar << "Ingrese cuanto dinero se ha gastado en la gasolina para el viaje: ";
+  Leer >> dinero_gastado_en_gasolina;
+  Mostrar << "Ingrese las horas del recorrido: ";
+  Leer >> horas;
+  Mostrar << "Y los minutos: ";
+  Leer >> minutos;
+
+  // tiempo_total = horas + (minutos / 60);
+  // velocidad_kmh = kilometros_recorridos / tiempo_total;
+
+  velocidad_kmh = kilometros_recorridos / [horas + (minutos / 60)];
+  velocidad_ms = velocidad_kmh * (5 / 18);
+
+  litros_consumidos_total = dinero_gastado_en_gasolina / precio_gasolina_por_litro;
+  litros_consumidos_km = litros_consumidos_total / kilometros_recorridos;
+  litros_consumidos_100km = litros_consumidos_km * 100;
+
+  precio_gasolinaKm = litros_consumidos_km * precio_gasolina_por_litro;
+  precio_gasolina100Km = precio_gasolinaKm * 100;
+
+  Mostrar << "Segun los datos obtenidos, se deduce lo siguiente: ";
+  Mostrar << "Por cada Km se gasta ", litros_consumidos_km, " litros de gasolina. ", precio_gasolinaKm, " dolares.";
+  Mostrar << "Por cada 100Km se gasta ", litros_consumidos_100km, " litros de gasolina. ", precio_gasolina100Km, " dolares.";
+  Mostrar << "Y la velocidad a la que se viajo fue de ", velocidad_kmh, " Km/h, es decir, ", velocidad_ms, " m/s";
+Fin

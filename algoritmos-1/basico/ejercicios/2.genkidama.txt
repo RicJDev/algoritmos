@@ -1,0 +1,21 @@
+----------------------------------------------------------------------------------------
+  ENUNCIADO:
+
+  Desarrolle un algoritmo que permita calcular la distancia que recorre una
+  genkidama lanzada por Goku, a partir de la velocidad de lanzamiento en metros por
+  segundo y el tiempo en segundos que tarda en impactar a Majin Bu.
+  
+  El algoritmo debe:
+
+  - Solicitar al usuario la velocidad de la genkidama (en m/s).
+  - Solicitar el tiempo que tarda en llegar al objetivo (en segundos).
+  - Calcular la distancia recorrida multiplicando la velocidad por el tiempo.
+  - Mostrar el resultado de la distancia recorrida en metros.
+
+  Este problema aplica la fórmula básica de física que relaciona distancia, velocidad
+  y tiempo:
+
+  distancia = velocidad × tiempo
+----------------------------------------------------------------------------------------
+
+

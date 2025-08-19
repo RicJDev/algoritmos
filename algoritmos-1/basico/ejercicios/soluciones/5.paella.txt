@@ -1,0 +1,25 @@
+Algoritmo Paella
+Inicio
+  var comensales: Entero;
+  var precio_vegetales, precio_arroz: Real;
+  var cantidad_arroz, cantidad_vegetales: Real;
+  var costo_vegetales, costo_arroz, costo_total: Real;
+
+  Mostrar << "Ingrese la cantidad de comensales: ";
+  Leer >> comensales;
+  Mostrar << "Ingrese el precio por kilo del arroz: ";
+  Leer >> precio_arroz;
+  Mostrar << "Ingrese el precio por kilo de los vegetales: ";
+  Leer >> precio_vegetales;
+
+  cantidad_arroz = (comensales * 0.5) / 4;
+  cantidad_vegetales = (comensales * 0.25) / 4;
+  costo_arroz = cantidad_arroz * precio_arroz;
+  costo_vegetales = cantidad_vegetales * precio_vegetales;
+  costo_total = costo_arroz + costo_vegetales;
+
+  Mostrar << "Para hacer una paella para ", comensales, " persona(s) se necesita:";
+  Mostrar << cantidad_arroz, " kilos de arroz. Un costo de ", costo_arroz, " dolares";
+  Mostrar << cantidad_vegetales, " kilos de vegetales. Un costo de ", costo_vegetales, " dolares";
+  Mostrar << "El costo total seria de ", costo_total, " dolares.";
+Fin

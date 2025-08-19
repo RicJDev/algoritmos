@@ -1,0 +1,38 @@
+-----------------------------------------------------------------------------------
+ENUNCIADO:
+
+Suponiendo que una paella se puede cocinar exclusivamente con arroz y vegetales,
+y que por cada cuatro personas se utiliza medio kilo de arroz y un cuarto de kilo
+de vegetales; escriba un programa que pida por pantalla el numero de comensales
+para la paella, el precio por kilo de los ingredientes y muestre la cantidad de
+ingredientes necesarios y el coste de la misma, es decir, por arroz, por vegetales
+y en total.
+-----------------------------------------------------------------------------------
+
+Algoritmo Paella
+Inicio
+  var comensales: Entero;
+  var precio_arroz, precio_vegetales: Real;
+  var cantidad_arroz, cantidad_vegetales, costo_arroz, costo_vegetales, costo_total: Real;
+
+  Mostrar << "Ingrese la cantidad de comensales";
+  Leer >> comensales;
+  Mostrar << "Ingrese el precio del arroz por kilo";
+  Leer >> precio_arroz;
+  Mostrar << "Ingrese el precio de los vegetales por kilo";
+  Leer >> precio_vegetales;
+
+  cantidad_arroz = (0.5 * comensales) / 4;
+  cantidad_vegetales = (0.25 * comensales) / 4;
+  costo_arroz = cantidad_arroz * precio_arroz;
+  costo_vegetales = cantidad_vegetales * precio_vegetales;
+  costo_total = costo_arroz + costo_vegetales;
+
+  Mostrar << "Para la paella necesitamos: ";
+  Mostrar << cantidad_arroz, " kilos de arroz";
+  Mostrar << cantidad_vegetales, " kilos de vegetales";
+  Mostrar << "Costo del arroz ", costo_arroz, "$";
+  Mostrar << "Costo de los vegetales ", costo_vegetales, "$";
+  Mostrar << "Costo total: ", costo_total, "$";
+Fin
+
