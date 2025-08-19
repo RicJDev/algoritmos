@@ -61,6 +61,7 @@ Te enfocas en lo que puede que sea falso, malo o invalido
 >    - 6 en dos dados: "Muy bien"
 >    - 6 en un solo dado: "Regular"
 >    - Ningun 6: "Pesimo"
+>
 > Esto solo debe realizarse con datos previamente validados. En caso de haber datos invalidos, notificar al usuario y finalizar el programa
 
 [Ver solucion](./dados.txt) 
