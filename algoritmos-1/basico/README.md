@@ -75,38 +75,8 @@ Fin
 
 ## Ejemplo con ejercicio basico
 
-[Aca el archivo del ejercicio](./salario.txt) 
-
 ### Enunciado:
 
 Desarrolle un algoritmo que solicite el nombre de un empleado, la cantidad de horas que dicho empleado ha trabajado y su salario por hora. El programa debe calcular el salario total que le corresponde al empleado. Ademas, considerando que estamos en epoca de bonificaciones, debe calcular el monto de la misma, que es igual al 10% del salario total, y mostrar todos los datos al empleado
 
-### Solucion:
-
-```
-Algoritmo salario
-Inicio
-  var nombre: Cadena;
-  var horas_trabajadas: Entero;
-  var salario_hora, salario_neto, bonificacion, salario_total: Real;
-
-  Mostrar << "Ingrese su nombre";
-  Leer >> nombre;
-  Mostrar << "Ingrese la cantidad de horas que ha trabajado";
-  Leer >> horas_trabajadas;
-  Mostrar << "Ingrese el salario basico por hora";
-  Leer >> salario_hora;
-
-  salario_neto = salario_hora * horas_trabajadas;
-  bonificacion = (salario_neto * 10) / 100;
-  salario_total = salario_neto + bonificacion;
-
-  Mostrar << "-------------------------------------"
-  Mostrar << "Datos del trabajador";
-  Mostrar << "Nombre: ", nombre;
-  Mostrar << "Salario neto: ", salario_neto;
-  Mostrar << "Bonificacion del 10%: ", bonificacion;
-  Mostrar << "-------------------------------------"
-  Mostrar << "Salario total: ", salario_total;
-Fin
-```
+[Ver solucion](./salario.txt) 
