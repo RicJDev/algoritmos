@@ -1,0 +1,13 @@
+----------------------------------------------------------------------------------
+ENUNCIADO
+  Escribir un programa que reciba las longitudes de los tres lados de un triangulo,
+  validando que sean mayores a 0 y que la suma de los lados menores sea mayor al
+  lado mayor, y determine el tipo:
+
+   - "Equilatero" si los tres lados son iguales.
+   - "Isosceles" si dos lados son iguales.
+   - "Escaleno" si los tres lados son diferentes.
+   - "No es un triangulo" si no existe el triangulo.
+
+  En caso de datos invalidos, mostrar mensaje de error y terminar.
+----------------------------------------------------------------------------------

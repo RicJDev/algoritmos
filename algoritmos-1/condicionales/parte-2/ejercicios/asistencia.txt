@@ -1,0 +1,19 @@
+----------------------------------------------------------------------
+ENUNCIADO:
+  Escribir un programa que pida la nota final (del 1 a 100), la cantidad
+  de clases dadas y la cantidad de asistencias de un alummno. Debera
+  calcular el porcentaje de asistencia y a partir de ahi mostrar uno
+  de los siguientes mensajes:
+
+  - "Aprobado con honores" si la nota es mayor o igual a 90 y la
+  asistencia es mayor o igual al 95%.
+  - "Aprobado" si la nota es mayor o igual a 60 y la asistencia es 
+  mayor o igual al 75%.
+  - "Reprobado por nota" si la nota es menor a 60, sin importar la 
+  asistencia.
+  - "Reprobado por asistencia" si la asistencia es menor a 75%, sin
+  importar la nota.
+
+  Validar los datos ingreasados. En caso de error, finalizar el programa
+  y notificar
+----------------------------------------------------------------------

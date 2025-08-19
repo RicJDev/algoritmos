@@ -1,0 +1,13 @@
+-------------------------------------------------------------
+ENUNCIADO:
+  Sabiendo que una ecuacion de segundo grado como esta:
+                    ax² + bx + c = 0
+
+  Se puede resolver utilizando la siguiente formula:
+              x = (-b ± √(b² - 4ac)) / 2a
+
+  Cree un algoritmo que solicite los coeficientes a, b y c.
+  Luego calcule las soluciones reales para la ecuacion. Tome
+  en cuenta que para que una solucion sea real, el radicando 
+  dentro de la raiz debe ser un numero positivo.
+-------------------------------------------------------------
