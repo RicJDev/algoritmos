@@ -1,0 +1,29 @@
+-----------------------------------------------------------------------------
+ENUNCIADO
+  Hacer un programa para ingresar un valor que estará expresado en minutos. Si
+  los minutos superan los 60, pasar el valor a horas, de lo contrario dejarlo en
+  minutos. Mostrar el resultado en pantalla aclarando si se muestran minutos u
+  horas.
+-----------------------------------------------------------------------------
+
+Algoritmo Minutos (como la cancion de Arjona)
+Inicio
+  var minutos: Entero;
+  var horas: Real;
+
+  Mostrar << "Ingrese una cantidad de minutos";
+  Leer >> minutos;
+
+  Si (minutos > 0) Entonces;
+    Si (minutos > 60) Entonces;
+      horas = minutos / 60;
+      Mostrar << "La cantidad de minutos ingresada es igual a ", horas, " horas";
+
+      Sino
+        Mostrar << "Usted ha ingresado ", minutos, " minutos. No se realizo ninguna conversion";
+    Fin_Si
+
+    Sino
+      Mostrar << "Cantidad no valida";
+  Fin_Si
+Fin

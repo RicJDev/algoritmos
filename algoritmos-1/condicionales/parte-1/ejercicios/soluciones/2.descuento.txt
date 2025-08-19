@@ -1,0 +1,49 @@
+---------------------------------------------------------------------------
+ENUNCIADO: 
+Una tienda de videojuegos otorga un descuento dependiendo del monto de la
+compra realizada según los siguientes valores: 
+- Si el monto es menor a $100, no hay descuento.
+- Si el monto es $100 o más pero menor a $500, aplica un
+descuento del 10%.
+- Si el monto es $500 o más, aplica un descuento del 18%.
+Hacer un programa para ingresar un monto de venta y luego muestre por
+pantalla el monto final con el descuento que corresponda. Tomar en cuenta
+las validaciones correspondientes
+---------------------------------------------------------------------------
+
+Algoritmo Descuento
+Inicio
+  var monto_compra, monto_final, descuento: Real;
+  var porcentaje: Entero;
+
+  Mostrar << "Ingrese el monto de su compra";
+  Leer >> monto_compra;
+
+  Si (monto_compra <= 0) Entonces;
+    Mostrar << "Monto invalido";
+
+    Sino
+      Si (monto_compra < 100) Entonces;
+        porcentaje = 0;
+
+        Sino
+          Si (monto_compra >= 100 AND monto_compra < 500) Entonces;
+            porcentaje = 10;
+
+            Sino
+              Si (monto_compra >= 500) Entonces;
+                porcentaje = 18;
+              Fin_Si
+          Fin_Si
+      Fin_Si
+
+      descuento = (monto_compra * porcentaje) / 100;
+      monto_final = monto_compra - descuento;
+
+      Mostrar << "------------  FACTURA  ----------------";
+      Mostrar << "Monto de la compra: ", monto_compra;
+      Mostrar << "Monto del descuento: ", descuento;
+      Mostrar << "Monto a pagar: , monto_final;"
+      Mostrar << "---------------------------------------";
+  Fin_Si
+Fin
