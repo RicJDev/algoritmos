@@ -1,0 +1,9 @@
+Procedimiento aritmetica(E: v[e], i, e: Entero, S: s, res, m: Entero, d: Real);
+Inicio
+  Para (i = 1 Hasta i = e) Hacer;
+    s = s + v[i];
+    m = m * v[i];
+    d = v[i] / d;
+    res = v[i] - res;
+  Fin_Para
+Fin_Procedimiento
