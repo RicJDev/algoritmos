@@ -1,8 +1,6 @@
-## Apuntes y ejercicios de Algoritmos
+# Mono repo de Algoritmos de RicJDev
 
-A lo largo del tiempo iré dejando mis apuntes junto con algunos ejercicios en este repo. Siéntete libre de curiosear, preguntar y contribuir a él.
-
-### Algoritmos I
+## Algoritmos I
 
 - [Introduccion a los algorimtos](./algoritmos-1/1.introduccion/)
 - Condicionales
