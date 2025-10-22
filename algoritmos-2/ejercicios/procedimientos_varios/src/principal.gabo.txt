@@ -1,0 +1,88 @@
+Algoritmo procesos_varios
+Inicio
+  var e, i, n, opc, posicion, x, m1: Entero;
+  var d = 1: Real;
+  var s = 0, res = 0, m = 1, p = 0, im = 0: Entero;
+  var pivote, r = 0, z = 1: Booleano;
+  var v[e], vr[e], orden[e]: Entero;
+
+  Repetir
+    datos(v[e], i, e);
+    Mostrar << datos;
+
+    Mientras (z = 1) Hacer;
+      pantalla(opc);
+      Mostrar << pantalla;
+
+      En_Caso (opc > 0) Sea;
+        Caso (opc = 1);
+          aritmetica(v[e], i, e, s, res, m, d);
+          impresion_aritmetica(s, res, m, d);
+          Mostrar << impresion_aritmetica;
+        Caso (opc = 2);
+          respaldo(v[e], i, e, vr[e]);
+          impresion_respaldo(s, res, m, d);
+          Mostrar << impresion_respaldo;
+        Caso (opc = 3);
+          par_impar(v[e], i, e, p, im);
+          impresion_par_impar(p, im);
+          Mostrar << impresion_par_impar;
+        Caso (opc = 4);
+          ordenado(v[e], i, e, orden[e]);
+          impresion_ordenado(v[e], i, e, orden[e]);
+          Mostrar << impresion_ordenado;
+        Caso (opc = 5);
+          elemento_busqueda(x);
+          Mostrar << elemento_busqueda;
+          busqueda(v[e], i, e, x, pivote, posicion);
+          impresion_busqueda(x, pivote, posicion);
+          Mostrar << impresion_busqueda;
+        Caso (opc = 6);
+          mayor(v[e], i, e, m1);
+          impresion_mayor(m1);
+          Mostrar << impresion_mayor;
+        Caso (opc = 7);
+          aritmetica(v[e], i, e, s, res, m, d);
+          impresion_aritmetica(s, res, m, d);
+          Mostrar << impresion_aritmetica;
+
+          respaldo(v[e], i, e, vr[e]);
+          impresion_respaldo(s, res, m, d);
+          Mostrar << impresion_respaldo;
+
+          par_impar(v[e], i, e, p, im);
+          impresion_par_impar(p, im);
+          Mostrar << impresion_par_impar;
+
+          ordenado(v[e], i, e, orden[e]);
+          impresion_ordenado(v[e], i, e, orden[e]);
+          Mostrar << impresion_ordenado;
+
+          elemento_busqueda(x);
+          Mostrar << elemento_busqueda;
+          busqueda(v[e], i, e, x, pivote, posicion);
+          impresion_busqueda(x, pivote, posicion);
+          Mostrar << impresion_busqueda;
+
+          mayor(v[e], i, e, m1);
+          impresion_mayor(m1);
+          Mostrar << impresion_mayor;
+        Caso (opc = 8);
+          borrar(v[e], i, e);
+          Mostrar << borrar;
+        Otro_Caso
+          Mostrar << "Bye, bye, Hawaii!";
+      Fin_Caso
+      
+      Mostrar << "Marque 1 para volver al menu anterior";
+      Mostrar << "Marque 0 para salir de este menu";
+      Leer >> z;
+    Fin_Mientras
+    
+    Mostrar << "Marque 1 para volver a llenar el vector";
+    Mostrar << "Marque 0 para salir del programa";
+    Leer >> r;
+
+    Hasta (r = 0);
+  Fin_Repetir
+Fin
