@@ -1,0 +1,134 @@
+Algoritmo calabozo_matrices
+Inicio
+  var calabozo[10][10]: Caracter;
+
+  // Aquí van tus variables. Usa cuantas necesites
+
+  var casillas[10][10]: Booleano;
+  var cantidad_casillas = 0: Entero;
+  var direccion = 1, x_prota, y_prota, i, j: Entero;
+  var carater_actual: Caracter;
+  var casilla_actual: Booleano;
+
+  cargar_calabozo(calabozo);
+
+  // Aquí va la solución. Suerte, campeón!
+
+  cargar_casillas(casillas);
+
+  Para (i = 1 Hasta i = 10) Hacer;
+    Para (j = 1 Hasta j = 10) Hacer;
+      carater_actual = calabozo[i][j];
+
+      Si (carater_actual = '^') Entonces;
+        y_prota = i;
+        x_prota = j;
+      Fin_Si
+    Fin_Para
+  Fin_Para
+
+  Mientras (x_prota > 0 And x_prota <= 10 And y_prota > 0 And y_prota <= 10) Hacer;
+    mover_prota(calabozo, x_prota, y_prota, direccion);
+
+    casillas[y_prota][x_prota] = 1;
+  Fin_Mientras
+
+  Para (i = 1 Hasta i = 10) Hacer;
+    Para (j = 1 Hasta j = 10) Hacer;
+      casilla_actual = casillas[i][j];
+
+      Si (casilla_actual = 1) Entonces;
+        cantidad_casillas = cantidad_casillas + 1;
+      Fin_Si
+    Fin_Para
+  Fin_Para
+
+  Mostrar << "El total de casillas visitadas es ", cantidad_casillas;
+Fin
+
+Procedimiento cargar_casillas(E/S: casillas[10][10]: Booleano);
+Inicio
+  var i, j: Entero;
+
+  Para (i = 1 Hasta i = 10) Hacer;
+    Para (j = 1 Hasta j = 10) Hacer;
+      casillas[i][j] = 0;
+    Fin_Para
+  Fin_Para
+Fin_Procedimiento
+
+Procedimiento mover_prota(E/S: calabozo[10][10]: Caracter, x_prota, y_prota, direccion: Entero);
+Inicio
+  var siguiente_paso: Caracter;
+
+  // Valores para `direccion`
+  // 1: arriba
+  // 2: derecha
+  // 3: abajo
+  // 4: izquierda
+
+  En_Caso (direccion > 0) Sea;
+    Caso (direccion = 1);
+      siguiente_paso = calabozo[y_prota - 1][x_prota];
+      
+      Si (siguiente_paso = '#') Entonces;
+        direccion = 2;
+
+        Sino 
+          y_prota = y_prota - 1;
+      Fin_Si
+    Caso (direccion = 2);
+      siguiente_paso = calabozo[y_prota][x_prota + 1];
+      
+      Si (siguiente_paso = '#') Entonces;
+        direccion = 3;
+
+        Sino 
+          x_prota = x_prota + 1;
+      Fin_Si
+    Caso (direccion = 3);
+      siguiente_paso = calabozo[y_prota + 1][x_prota];
+      
+      Si (siguiente_paso = '#') Entonces;
+        direccion = 4;
+
+        Sino 
+          y_prota = y_prota + 1;
+      Fin_Si
+    Caso (direccion = 4);
+      siguiente_paso = calabozo[y_prota][x_prota - 1];
+      
+      Si (siguiente_paso = '#') Entonces;
+        direccion = 1;
+
+        Sino 
+          x_prota = x_prota - 1;
+      Fin_Si
+    Otro_Caso
+      Mostrar << "Direccion no valida";
+  Fin_Caso
+Fin_Procedimiento
+
+Procedimiento cargar_calabozo(E/S: calabozo[10][10]: Caracter);
+Inicio
+  var i, j: Entero;
+
+  Para (i = 1 Hasta i = 10) Hacer;
+    Para (j = 1 Hasta j = 10) Hacer;
+      calabozo[i][j] = '.';
+    Fin_Para
+  Fin_Para
+
+  calabozo[1][4] = '#';
+  calabozo[2][9] = '#';
+  calabozo[3][2] = '#';
+  calabozo[4][6] = '#';
+  calabozo[5][10] = '#';
+  calabozo[6][5] = '#';
+  calabozo[7][1] = '#';
+  calabozo[8][8] = '#';
+  calabozo[9][3] = '#';
+  calabozo[10][9] = '#';
+
+  calabozo[8][6] = '^';
+Fin_Procedimiento
