@@ -1,0 +1,12 @@
+Funcion mayor(v[e], i, e: Entero): Entero;
+Inicio
+  var m1 = 0: Entero;
+
+  Para (i = 1 Hasta i = e) Hacer;
+    Si (v[i] > m1) Entonces;
+      m1 = v[i];
+    Fin_Si
+  Fin_Para
+
+  Devolver (m1);
+Fin_Funcion
