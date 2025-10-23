@@ -1,0 +1,11 @@
+Procedimiento elemento_busqueda(S: x: Entero);
+Inicio
+  Mostrar << "Ingrese el numero a buscar. ";
+  Leer >> x;
+
+  Mientras (x < 0) Hacer;
+    Mostrar << "Solo hay numeros positivos. Es imposible que ", x, " este en el vector";
+    Mostrar << "Ingrese otro numero. ";
+    Leer >> x;
+  Fin_Mientras
+Fin_Procedimiento
