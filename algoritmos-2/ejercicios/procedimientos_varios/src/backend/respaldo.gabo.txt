@@ -1,0 +1,6 @@
+Procedimiento respaldo(E: v[e], i, e: Entero, S: vr[e]: Entero);
+Inicio
+  Para (i = 1 Hasta i = e) Hacer;
+    vr[i] = v[i];
+  Fin_Para
+Fin_Procedimiento
