@@ -24,15 +24,18 @@ Utilice sub algoritmos para la elaboración de los procesos solicitados y habili
     │   ├── aritmetica.gabo.txt
     │   ├── busqueda.gabo.txt
     │   ├── mayor.gabo.txt
+    │   ├── ordenado.gabo.txt
     │   ├── par_impar.gabo.txt
     │   └── respaldo.gabo.txt
     ├── frontend
+    │   ├── borrar.gabo.txt
     │   ├── datos.gabo.txt
     │   ├── elemento_busqueda.gabo.txt
     │   ├── impresiones
     │   │   ├── impresion_aritmetica.gabo.txt
     │   │   ├── impresion_busqueda.gabo.txt
     │   │   ├── impresion_mayor.gabo.txt
+    │   │   ├── impresion_ordenado.gabo.txt
     │   │   ├── impresion_par_impar.gabo.txt
     │   │   └── impresion_respaldo.gabo.txt
     │   └── pantalla.gabo.txt
