@@ -21,7 +21,7 @@ Inicio
           Mostrar << impresion_aritmetica;
         Caso (opc = 2);
           respaldo(v[e], i, e, vr[e]);
-          impresion_respaldo(s, res, m, d);
+          impresion_respaldo(v[e], i, e, vr[e]);
           Mostrar << impresion_respaldo;
         Caso (opc = 3);
           par_impar(v[e], i, e, p, im);
