@@ -1,4 +1,8 @@
-Procedimiento impresion_busqueda();
+Procedimiento impresion_busqueda(E: x: Entero, pivote: Booleano, posicion: Entero);
 Inicio
-  
+  Si (pivote = 1) Entonces;
+    Mostrar << "El elemento ", x, " esta en la posicion ", posicion, " del vector";
+    Sino
+      Mostrar << "El elemento ", x, " no se encuentra en e vector";
+  Fin_Si
 Fin_Procedimiento
