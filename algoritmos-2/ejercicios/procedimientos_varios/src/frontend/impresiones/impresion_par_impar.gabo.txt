@@ -1,4 +1,5 @@
-Procedimiento impresion_par_impar();
+Procedimiento impresion_par_impar(E: p, im: Entero);
 Inicio
-  
+  Mostrar << "Total de numeros pares ", p;
+  Mostrar << "Total de numeros impares ", im;
 Fin_Procedimiento
