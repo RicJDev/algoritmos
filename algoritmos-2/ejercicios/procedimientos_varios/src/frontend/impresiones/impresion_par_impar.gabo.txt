@@ -1,0 +1,4 @@
+Procedimiento impresion_par_impar();
+Inicio
+  
+Fin_Procedimiento

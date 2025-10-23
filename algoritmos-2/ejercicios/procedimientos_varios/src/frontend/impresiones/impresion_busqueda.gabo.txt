@@ -1,0 +1,4 @@
+Procedimiento impresion_busqueda();
+Inicio
+  
+Fin_Procedimiento

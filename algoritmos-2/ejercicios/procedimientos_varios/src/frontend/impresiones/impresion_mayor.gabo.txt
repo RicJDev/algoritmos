@@ -1,0 +1,4 @@
+Procedimiento impresion_mayor();
+Inicio
+  
+Fin_Procedimiento

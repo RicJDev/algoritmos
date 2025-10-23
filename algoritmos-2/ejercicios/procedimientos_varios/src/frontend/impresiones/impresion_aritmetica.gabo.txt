@@ -1,0 +1,4 @@
+Procedimiento impresion_aritmetica();
+Inicio
+  
+Fin_Procedimiento
