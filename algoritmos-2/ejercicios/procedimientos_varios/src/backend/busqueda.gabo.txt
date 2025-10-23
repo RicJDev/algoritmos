@@ -1,0 +1,19 @@
+Procedimiento busqueda(E: v[e], i, e, x: Entero, S: pivote: Booleano, posicion: Entero);
+Inicio
+  var continuar = 1: Booleano;
+ 
+  i = 1;
+  pivote = 0;
+
+  Mientras (i <= e And continuar = 1) Hacer;
+    Si (v[i] = x) Entonces;
+      pivote = 1;
+      posicion = i;
+
+      // Romper el bucle para quedarse con el primer elemento encontrado
+      continuar = 0;
+    Fin_Si
+
+    i = i + 1;
+  Fin_Mientras
+Fin_Procedimiento
