@@ -1,0 +1,14 @@
+Procedimiento par_impar(E: v[e], i, e: Entero, S: p, im: Entero);
+Inicio
+  var modulo: Entero;
+
+  Para (i = 1 Hasta i = e) Hacer;
+    modulo = v[i] MOD 2;
+
+    Si (modulo = 0) Entonces;
+      p = p + 1;
+      Sino
+        im = im + 1;
+    Fin_Si
+  Fin_Para
+Fin_Procedimiento
