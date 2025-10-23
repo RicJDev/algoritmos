@@ -1,4 +1,11 @@
 Procedimiento borrar(E/S: v[e], i, e: Entero);
 Inicio
-  // ...
+  Para (i = 1 Hasta i = e) Hacer;
+    v[i] = null;
+  Fin_Para
+
+  Mostrar << "Vector borrado: ";
+  Para (i = 1 Hasta i = e) Hacer;
+    Mostrar << v[i];
+  Fin_Para
 Fin
