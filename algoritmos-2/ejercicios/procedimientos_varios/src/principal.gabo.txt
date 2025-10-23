@@ -38,9 +38,8 @@ Inicio
           impresion_busqueda(x, pivote, posicion);
           Mostrar << impresion_busqueda;
         Caso (opc = 6);
-          // mayor(v[e], i, e, m1);
-          // impresion_mayor(m1);
-          // Mostrar << impresion_mayor;
+          // Version propia utilizando una funcion
+          // en lugar de un procedimiento 🤙🏻
 
           m1 = mayor(v[e], i, e);
           Mostrar << "El mayor es ", m1;
@@ -66,10 +65,6 @@ Inicio
           busqueda(v[e], i, e, x, pivote, posicion);
           impresion_busqueda(x, pivote, posicion);
           Mostrar << impresion_busqueda;
-
-          // mayor(v[e], i, e, m1);
-          // impresion_mayor(m1);
-          // Mostrar << impresion_mayor;
 
           m1 = mayor(v[e], i, e);
           Mostrar << "El mayor es ", m1;
