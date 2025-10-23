@@ -1,0 +1,4 @@
+Procedimiento borrar(E/S: v[e], i, e: Entero);
+Inicio
+  // ...
+Fin
