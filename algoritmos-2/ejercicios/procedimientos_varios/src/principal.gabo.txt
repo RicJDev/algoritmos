@@ -44,30 +44,9 @@ Inicio
           m1 = mayor(v[e], i, e);
           Mostrar << "El mayor es ", m1;
         Caso (opc = 7);
-          aritmetica(v[e], i, e, s, res, m, d);
-          impresion_aritmetica(s, res, m, d);
-          Mostrar << impresion_aritmetica;
+          // TODO: copiar los demas aqui
 
-          respaldo(v[e], i, e, vr[e]);
-          impresion_respaldo(s, res, m, d);
-          Mostrar << impresion_respaldo;
-
-          par_impar(v[e], i, e, p, im);
-          impresion_par_impar(p, im);
-          Mostrar << impresion_par_impar;
-
-          ordenado(v[e], i, e, orden[e]);
-          impresion_ordenado(v[e], i, e, orden[e]);
-          Mostrar << impresion_ordenado;
-
-          elemento_busqueda(x);
-          Mostrar << elemento_busqueda;
-          busqueda(v[e], i, e, x, pivote, posicion);
-          impresion_busqueda(x, pivote, posicion);
-          Mostrar << impresion_busqueda;
-
-          m1 = mayor(v[e], i, e);
-          Mostrar << "El mayor es ", m1;
+          // ...
         Caso (opc = 8);
           borrar(v[e], i, e);
           Mostrar << borrar;
