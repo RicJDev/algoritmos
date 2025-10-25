@@ -1,4 +1,0 @@
-Procedimiento impresion_mayor();
-Inicio
-  // Probablemente no utilice esto  
-Fin_Procedimiento

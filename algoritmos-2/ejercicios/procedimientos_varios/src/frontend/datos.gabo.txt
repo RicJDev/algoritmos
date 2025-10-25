@@ -1,19 +1,19 @@
-Procedimiento datos(E/S: v[e], i, e: Entero);
+Procedimiento datos(E/S: v[t], i, t: Entero);
 Inicio
   var n: Entero;
   Mostrar << "Ingrese un tamano para el vector (2 - 500) ";
-  Leer >> e;
+  Leer >> t;
 
-  Mientras (e < 2 Or e > 500) Hacer;
-    Mostrar << e, " esta fuera del rango de 2 a 500. Ingrese otro numero ";
-    Leer >> e;
+  Mientras (t < 2 Or t > 500) Hacer;
+    Mostrar << t, " esta fuera del rango de 2 a 500. Ingrese otro numero ";
+    Leer >> t;
   Fin_Mientras
 
-  Para (i = 1 Hasta i = e) Hacer;
+  Para (i = 1 Hasta i = t) Hacer;
     Mostrar << "Ingrese un numero entero positivo ";
     Leer >> n;
 
-    Mientras (n < 0) Hacer;
+    Mientras (n < 1) Hacer;
       Mostrar << n, " no es un numero positivo. Ingrese otro numero ";
       Leer >> n;
     Fin_Mientras

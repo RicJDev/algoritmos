@@ -1,7 +1,7 @@
-Procedimiento aritmetica(E: v[e], i, e: Entero, S: s, res, m: Entero, d: Real);
+Procedimiento aritmetica(E: v[t], i, t: Entero, S: suma, res, m: Entero, d: Real);
 Inicio
-  Para (i = 1 Hasta i = e) Hacer;
-    s = s + v[i];
+  Para (i = 1 Hasta i = t) Hacer;
+    suma = s + v[i];
     m = m * v[i];
     d = v[i] / d;
     res = v[i] - res;

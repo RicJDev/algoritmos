@@ -1,13 +1,13 @@
-Procedimiento ordenado(E: v[e], i, e: Entero, S: orden[e]: Entero);
+Procedimiento ordenado(E: v[t], i, t: Entero, S: orden[t]: Entero);
 Inicio
   var j, aux: Entero;
 
-  Para (i = 1 Hasta i = e) Hacer;
+  Para (i = 1 Hasta i = t) Hacer;
     orden[i] = v[i];
   Fin_Para
 
-  Para (i = 1 Hasta i = e) Hacer;
-    Para (j = 1 Hasta j = e - i) Hacer;
+  Para (i = 1 Hasta i = t) Hacer;
+    Para (j = 1 Hasta j = t - i) Hacer;
       Si (orden[j] > orden[j + 1]) Entonces;
         aux = orden[j];
         orden[j] = orden[j + 1];

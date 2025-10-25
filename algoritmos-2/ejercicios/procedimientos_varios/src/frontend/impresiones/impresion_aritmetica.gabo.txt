@@ -1,6 +1,6 @@
-Procedimiento impresion_aritmetica(E: s, res, m: Entero, d: Real);
+Procedimiento impresion_aritmetica(E: suma, res, m: Entero, d: Real);
 Inicio
-  Mostrar << "El total de la suma es ", s;
+  Mostrar << "El total de la suma es ", suma;
   Mostrar << "El total de la resta es ", res;
   Mostrar << "El total de la multiplicacion es ", m;
   Mostrar << "El total de la division es ", d;

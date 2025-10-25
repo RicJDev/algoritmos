@@ -1,13 +1,13 @@
 Algoritmo procesos_varios
 Inicio
-  var e, i, n, opc, posicion, x, m1: Entero;
+  var t, i, n, opc, posicion, x, m1: Entero;
   var d = 1: Real;
-  var s = 0, res = 0, m = 1, p = 0, im = 0: Entero;
+  var suma = 0, res = 0, m = 1, p = 0, im = 0: Entero;
   var pivote, r = 0, z = 1: Booleano;
-  var v[e], vr[e], orden[e]: Entero;
+  var v[t], vr[t], orden[t]: Entero;
 
   Repetir
-    datos(v[e], i, e);
+    datos(v[t], i, t);
     Mostrar << datos;
 
     Mientras (z = 1) Hacer;
@@ -16,60 +16,60 @@ Inicio
 
       En_Caso (opc > 0) Sea;
         Caso (opc = 1);
-          aritmetica(v[e], i, e, s, res, m, d);
-          impresion_aritmetica(s, res, m, d);
+          aritmetica(v[t], i, t, suma, res, m, d);
+          impresion_aritmetica(suma, res, m, d);
           Mostrar << impresion_aritmetica;
         Caso (opc = 2);
-          respaldo(v[e], i, e, vr[e]);
-          impresion_respaldo(v[e], i, e, vr[e]);
+          respaldo(v[t], i, t, vr[t]);
+          impresion_respaldo(v[t], i, t, vr[t]);
           Mostrar << impresion_respaldo;
         Caso (opc = 3);
-          par_impar(v[e], i, e, p, im);
+          par_impar(v[t], i, t, p, im);
           impresion_par_impar(p, im);
           Mostrar << impresion_par_impar;
         Caso (opc = 4);
-          ordenado(v[e], i, e, orden[e]);
-          impresion_ordenado(v[e], i, e, orden[e]);
+          ordenado(v[t], i, t, orden[t]);
+          impresion_ordenado(v[t], i, t, orden[t]);
           Mostrar << impresion_ordenado;
         Caso (opc = 5);
           elemento_busqueda(x);
           Mostrar << elemento_busqueda;
-          busqueda(v[e], i, e, x, pivote, posicion);
+          busqueda(v[t], i, t, x, pivote, posicion);
           impresion_busqueda(x, pivote, posicion);
           Mostrar << impresion_busqueda;
         Caso (opc = 6);
           // Version propia utilizando una funcion
           // en lugar de un procedimiento 🤙🏻
 
-          m1 = mayor(v[e], i, e);
+          m1 = mayor(v[t], i, t);
           Mostrar << "El mayor es ", m1;
         Caso (opc = 7);
-          aritmetica(v[e], i, e, s, res, m, d);
-          impresion_aritmetica(s, res, m, d);
+          aritmetica(v[t], i, t, suma, res, m, d);
+          impresion_aritmetica(suma, res, m, d);
           Mostrar << impresion_aritmetica;
 
-          respaldo(v[e], i, e, vr[e]);
-          impresion_respaldo(v[e], i, e, vr[e]);
+          respaldo(v[t], i, t, vr[t]);
+          impresion_respaldo(v[t], i, t, vr[t]);
           Mostrar << impresion_respaldo;
 
-          par_impar(v[e], i, e, p, im);
+          par_impar(v[t], i, t, p, im);
           impresion_par_impar(p, im);
           Mostrar << impresion_par_impar;
 
-          ordenado(v[e], i, e, orden[e]);
-          impresion_ordenado(v[e], i, e, orden[e]);
+          ordenado(v[t], i, t, orden[t]);
+          impresion_ordenado(v[t], i, t, orden[t]);
           Mostrar << impresion_ordenado;
 
           elemento_busqueda(x);
           Mostrar << elemento_busqueda;
-          busqueda(v[e], i, e, x, pivote, posicion);
+          busqueda(v[t], i, t, x, pivote, posicion);
           impresion_busqueda(x, pivote, posicion);
           Mostrar << impresion_busqueda;
 
-          m1 = mayor(v[e], i, e);
+          m1 = mayor(v[t], i, t);
           Mostrar << "El mayor es ", m1;
         Caso (opc = 8);
-          borrar(v[e], i, e);
+          borrar(v[t], i, t);
           Mostrar << borrar;
         Otro_Caso
           Mostrar << "Bye, bye, Hawaii!";

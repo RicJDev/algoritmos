@@ -1,8 +1,8 @@
-Procedimiento par_impar(E: v[e], i, e: Entero, S: p, im: Entero);
+Procedimiento par_impar(E: v[t], i, t: Entero, S: p, im: Entero);
 Inicio
   var modulo: Entero;
 
-  Para (i = 1 Hasta i = e) Hacer;
+  Para (i = 1 Hasta i = t) Hacer;
     modulo = v[i] MOD 2;
 
     Si (modulo = 0) Entonces;

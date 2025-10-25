@@ -1,8 +1,8 @@
-Funcion mayor(v[e], i, e: Entero): Entero;
+Funcion mayor(v[t], i, t: Entero): Entero;
 Inicio
   var m1 = 0: Entero;
 
-  Para (i = 1 Hasta i = e) Hacer;
+  Para (i = 1 Hasta i = t) Hacer;
     Si (v[i] > m1) Entonces;
       m1 = v[i];
     Fin_Si

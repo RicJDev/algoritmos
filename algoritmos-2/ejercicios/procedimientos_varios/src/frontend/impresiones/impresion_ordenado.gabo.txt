@@ -1,12 +1,12 @@
-Procedimiento impresion_ordenado(E: v[e], i, e, orden[e]: Entero);
+Procedimiento impresion_ordenado(E: v[t], i, t, orden[t]: Entero);
 Inicio
   Mostrar << "Arreglo original ";
-  Para (i = 1 Hasta i = e) Hacer;
+  Para (i = 1 Hasta i = t) Hacer;
     Mostrar << v[i];
   Fin_Para
 
   Mostrar << "Arreglo ordenado ";
-  Para (i = 1 Hasta i = e) Hacer;
+  Para (i = 1 Hasta i = t) Hacer;
     Mostrar << orden[i];
   Fin_Para
 Fin_Procedimiento
