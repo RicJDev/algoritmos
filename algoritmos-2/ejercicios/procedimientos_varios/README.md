@@ -14,6 +14,18 @@ Diseña un algoritmo para cargar un vector de `n` posiciones. Luego de que esté
 
 Utilice sub algoritmos para la elaboración de los procesos solicitados y habilite para que los usuarios puedan volver a cargar el vector
 
+## Auitoría 
+
+Se han cambiado los nombres de las variables `s`, `e` y `r` para evitar una colisión de nombres: 
+
+- `s` ahora se llama `suma`. Evitando que se parezca a la palabra reservada para indicar variables de salida.
+- `e` ahora se llama `t`. Evitando que se parezca a la palabra reservada para indicar variables de entrada.
+- `r` ahora se llama `res`. Para distinguirla de otra variable declarada como `r`.
+
+Se ha modificado el uso de un procedimiento par obtener el numero mayor y usado una función en su lugar. Esto ahorra pasar una variable por parámetro, lo que ayuda a la legibilidad y mantenibilidad. Y tiene más sentido al tratarse de un único valor a calcular.
+
+Se ha desarrollado una versión propia del algoritmo de ordenamiento con método de burbuja que evita acceder a índices fuera del arreglo.
+
 ## Árbol de archivos de mi solución
 
 ```
