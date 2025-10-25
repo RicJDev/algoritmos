@@ -46,7 +46,6 @@ Se ha desarrollado una versión propia del algoritmo de ordenamiento con método
     │   ├── impresiones
     │   │   ├── impresion_aritmetica.gabo.txt
     │   │   ├── impresion_busqueda.gabo.txt
-    │   │   ├── impresion_mayor.gabo.txt
     │   │   ├── impresion_ordenado.gabo.txt
     │   │   ├── impresion_par_impar.gabo.txt
     │   │   └── impresion_respaldo.gabo.txt
