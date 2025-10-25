@@ -1,10 +1,10 @@
 Algoritmo procesos_varios
 Inicio
-  var t, i, n, opc, posicion, x, m1: Entero;
   var d = 1: Real;
-  var suma = 0, res = 0, m = 1, p = 0, im = 0: Entero;
-  var pivote, r = 0, z = 1: Booleano;
   var v[t], vr[t], orden[t]: Entero;
+  var t, i, n, opc, posicion, x, m1: Entero;
+  var suma = 0, res = 0, m = 1, p = 0, im = 0: Entero;
+  var pivote = 0, r = 0, z = 1: Booleano;
 
   Repetir
     datos(v[t], i, t);
