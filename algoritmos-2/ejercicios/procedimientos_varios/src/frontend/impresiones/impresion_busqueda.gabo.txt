@@ -3,6 +3,6 @@ Inicio
   Si (pivote = 1) Entonces;
     Mostrar << "El elemento ", x, " esta en la posicion ", posicion, " del vector";
     Sino
-      Mostrar << "El elemento ", x, " no se encuentra en e vector";
+      Mostrar << "El elemento ", x, " no se encuentra en el vector";
   Fin_Si
 Fin_Procedimiento

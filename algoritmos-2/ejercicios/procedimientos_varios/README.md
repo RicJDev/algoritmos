@@ -14,7 +14,7 @@ Diseña un algoritmo para cargar un vector de `n` posiciones. Luego de que esté
 
 Utilice sub algoritmos para la elaboración de los procesos solicitados y habilite para que los usuarios puedan volver a cargar el vector
 
-## Auitoría 
+## Auditoría 
 
 Se han cambiado los nombres de las variables `s`, `e` y `r` para evitar una colisión de nombres: 
 

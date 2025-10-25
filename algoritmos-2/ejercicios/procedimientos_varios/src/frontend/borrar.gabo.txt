@@ -8,4 +8,4 @@ Inicio
   Para (i = 1 Hasta i = t) Hacer;
     Mostrar << v[i];
   Fin_Para
-Fin
+Fin_Procedimiento
