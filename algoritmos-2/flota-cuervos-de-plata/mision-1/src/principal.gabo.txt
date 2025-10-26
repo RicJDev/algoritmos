@@ -1,0 +1,27 @@
+Algoritmo registros_piratas
+Inicio
+  var total, cantidad_1, cantidad_2, cantidad_3, cantidad_4, cantidad_5: Entero;
+  var nombres, roles, tripulacion: Cadena;
+
+  Mostrar << "Cuantos tripulantes tienen las Lunas Superiores?";
+  Leer >> cantidad_1;
+  Mostrar << "Cuantos tripulantes tienen los Piratas del Apocalipsis?";
+  Leer >> cantidad_2;
+  Mostrar << "Cuantos tripulantes tienen los Two Pieces?";
+  Leer >> cantidad_3;
+  Mostrar << "Cuantos tripulantes tienen los Pecados Capitales?";
+  Leer >> cantidad_4;
+  Mostrar << "Cuantos tripulantes tienen los Heroes de los 7 mares?";
+  Leer >> cantidad_5;
+
+  total = cantidad_1 + cantidad_2 + cantidad_3 + cantidad_4 + cantidad_5;
+
+  var trip: Entero;
+  En_Caso (trip) Sea;
+    Caso(trip = 1);
+    Caso(trip = 2);
+    Caso(trip = 3);
+    Caso(trip = 4);
+    Otro_Caso
+  Fin_Caso
+Fin
