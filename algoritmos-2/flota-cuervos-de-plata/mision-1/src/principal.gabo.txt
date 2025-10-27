@@ -1,27 +1,75 @@
 Algoritmo registros_piratas
 Inicio
-  var total, cantidad_1, cantidad_2, cantidad_3, cantidad_4, cantidad_5: Entero;
-  var nombres, roles, tripulacion: Cadena;
+  var total, cantidad, cantidad_1, cantidad_2, cantidad_3, cantidad_4, cantidad_5: Entero;
+  var nombres[total], roles[total], tripulacion[total]: Cadena;
+  var edades[total]: Entero;
+  var estaturas[total]: Real;
+
+  // Guardar los id's de los tripulantes en los siguientes vectores
+  var trip_1[cantidad_1], trip_2[cantidad_2]: Entero;
+  var trip_3[cantidad_3], trip_4[cantidad_4], trip_5[cantidad_5]: Entero;
+  var total_a, total_b, total_c: Entero;
+  var grupo_a[total_a], grupo_b[total_b], grupo_c[total_c]: Entero;
+  var total_mayores, total_menores: Entero;
+  var mayores[total_mayores], total_menores[total_menores]: Entero;
+  var id_mas_alto, id_mas_bajito: Entero;
 
   Mostrar << "Cuantos tripulantes tienen las Lunas Superiores?";
-  Leer >> cantidad_1;
+  captar_cantidad(cantidad);
+  Mostrar << captar_cantidad;
+  cantidad_1 = cantidad;
+  
   Mostrar << "Cuantos tripulantes tienen los Piratas del Apocalipsis?";
-  Leer >> cantidad_2;
+  captar_cantidad(cantidad);
+  Mostrar << captar_cantidad;
+  cantidad_2 = cantidad;
+
   Mostrar << "Cuantos tripulantes tienen los Two Pieces?";
-  Leer >> cantidad_3;
+  captar_cantidad(cantidad);
+  Mostrar << captar_cantidad;
+  cantidad_3 = cantidad;
+
   Mostrar << "Cuantos tripulantes tienen los Pecados Capitales?";
-  Leer >> cantidad_4;
+  captar_cantidad(cantidad);
+  Mostrar << captar_cantidad;
+  cantidad_4 = cantidad;
+
   Mostrar << "Cuantos tripulantes tienen los Heroes de los 7 mares?";
-  Leer >> cantidad_5;
+  captar_cantidad(cantidad);
+  Mostrar << captar_cantidad;
+  cantidad_5 = cantidad;
 
   total = cantidad_1 + cantidad_2 + cantidad_3 + cantidad_4 + cantidad_5;
 
-  var trip: Entero;
-  En_Caso (trip) Sea;
-    Caso(trip = 1);
-    Caso(trip = 2);
-    Caso(trip = 3);
-    Caso(trip = 4);
-    Otro_Caso
-  Fin_Caso
+  captar_datos(
+    nombres[total],
+    roles[total],
+    tripulacion[total],
+    edades[total],
+    estaturas[total],
+    total);
+
+  registar_tripulaciones(
+    tripulacion[total];
+    trip_1[cantidad_1],
+    trip_2[cantidad_2],
+    trip_3[cantidad_3],
+    trip_4[cantidad_4],
+    trip_5[cantidad_5]);
+
+  contar_grupos(estaturas[total], total_a, total_b, total_c, id_mas_alto, id_mas_bajito);
+
+  registar_grupos(
+    estaturas[total];
+    grupo_a[total_a],
+    grupo_b[total_b],
+    grupo_c[total_c]);
+
+  contar_menores_mayores(edades[total], total_mayores, total_menores);
+
+  registar_menores_mayores(
+    edades[total],
+    grupo_a[total_a],
+    grupo_b[total_b],
+    grupo_c[total_c]);
 Fin

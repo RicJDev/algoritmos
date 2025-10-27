@@ -1,0 +1,12 @@
+Procedimiento captar_cantidad(E/S: cantidad: Entero);
+Inicio
+  cantidad = 0;
+
+  Mostrar << "Ingrese un numero entero positivo no mayor a 100. ";
+  Leer >> cantidad;
+
+  Mientras (cantidad < 1 Or cantidad > 100) Hacer;
+    Mostrar << cantidad, " no es un numero valido. Igrese otro. ";
+    Leer >> cantidad;
+  Fin_Mientras
+Fin_Procedimiento
