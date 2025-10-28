@@ -1,12 +1,15 @@
-Procedimiento captar_cantidad(E/S: cantidad: Entero);
+Procedimiento captar_cantidad(E/S: total: Entero);
 Inicio
-  cantidad = 0;
+  var n, min, max: Entero;
 
-  Mostrar << "Ingrese un numero entero positivo no mayor a 100. ";
-  Leer >> cantidad;
+  Mostrar << "Ingrese la cantidad total de tripulantes de toda la flota. ";
+  Mostrar << "Solo numeros entre 2 y 500. ".;
 
-  Mientras (cantidad < 1 Or cantidad > 100) Hacer;
-    Mostrar << cantidad, " no es un numero valido. Igrese otro. ";
-    Leer >> cantidad;
-  Fin_Mientras
+  n = 0;
+  min = 2;
+  max = 500;
+  captar_entero(n, min, max);
+  Mostrar << captar_entero;
+
+  total = n;
 Fin_Procedimiento
