@@ -1,11 +1,10 @@
 Algoritmo registros_piratas
 Inicio
-  var total, cantidad, cantidad_1, cantidad_2, cantidad_3, cantidad_4, cantidad_5: Entero;
+  var total, cantidad_1, cantidad_2, cantidad_3, cantidad_4, cantidad_5: Entero;
   var nombres[total], roles[total], tripulacion[total]: Cadena;
   var edades[total]: Entero;
   var estaturas[total]: Real;
 
-  // Guardar los id's de los tripulantes en los siguientes vectores
   var trip_1[cantidad_1], trip_2[cantidad_2]: Entero;
   var trip_3[cantidad_3], trip_4[cantidad_4], trip_5[cantidad_5]: Entero;
   var total_a, total_b, total_c: Entero;
@@ -14,32 +13,13 @@ Inicio
   var mayores[total_mayores], total_menores[total_menores]: Entero;
   var id_mas_alto, id_mas_bajito: Entero;
 
-  Mostrar << "Cuantos tripulantes tienen las Lunas Superiores?";
-  captar_cantidad(cantidad);
-  Mostrar << captar_cantidad;
-  cantidad_1 = cantidad;
-  
-  Mostrar << "Cuantos tripulantes tienen los Piratas del Apocalipsis?";
-  captar_cantidad(cantidad);
-  Mostrar << captar_cantidad;
-  cantidad_2 = cantidad;
-
-  Mostrar << "Cuantos tripulantes tienen los Two Pieces?";
-  captar_cantidad(cantidad);
-  Mostrar << captar_cantidad;
-  cantidad_3 = cantidad;
-
-  Mostrar << "Cuantos tripulantes tienen los Pecados Capitales?";
-  captar_cantidad(cantidad);
-  Mostrar << captar_cantidad;
-  cantidad_4 = cantidad;
-
-  Mostrar << "Cuantos tripulantes tienen los Heroes de los 7 mares?";
-  captar_cantidad(cantidad);
-  Mostrar << captar_cantidad;
-  cantidad_5 = cantidad;
-
-  total = cantidad_1 + cantidad_2 + cantidad_3 + cantidad_4 + cantidad_5;
+  captar_cantidades(
+    cantidad_1,
+    cantidad_2,
+    cantidad_3,
+    cantidad_4,
+    cantidad_5,
+    total);
 
   captar_datos(
     nombres[total],
@@ -48,6 +28,8 @@ Inicio
     edades[total],
     estaturas[total],
     total);
+
+  Mostrar << captar_datos;
 
   registar_tripulaciones(
     tripulacion[total];
