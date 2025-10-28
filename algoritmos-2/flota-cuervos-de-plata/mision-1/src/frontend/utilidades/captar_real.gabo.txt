@@ -1,0 +1,21 @@
+Procedimiento captar_real(E/S: n: Real, E: min, max: Entero);
+Incio
+  Si (max != -1) Entonces;
+    Mostrar << "Ingrese un numero mayor a ", min, " y menor a ", max;
+    Leer >> f;
+
+    Mientras (f < min Or f > max) Hacer;
+      Mostrar << f, "esta fuera del rango ", min, " - ", max, ". Intente nuevamente. ";
+      Leer >> f;
+    Fin_Mientras
+
+    Sino
+      Mostrar << "Ingrese un numero mayor a ", min;
+      Leer >> f;
+
+      Mientras (f < min) Hacer;
+        Mostrar << f, "no es mayor a ", min, ". Intente nuevamente. ";
+        Leer >> f;
+      Fin_Mientras
+  Fin_Si
+Fin_Procedimiento

@@ -1,0 +1,21 @@
+Procedimiento captar_entero(E/S: n: Entero, E: min, max: Entero);
+Incio
+  Si (max != -1) Entonces;
+    Mostrar << "Ingrese un numero mayor a ", min, " y menor a ", max;
+    Leer >> n;
+
+    Mientras (n < min Or n > max) Hacer;
+      Mostrar << n, "esta fuera del rango ", min, " - ", max, ". Intente nuevamente. ";
+      Leer >> n;
+    Fin_Mientras
+
+    Sino
+      Mostrar << "Ingrese un numero mayor a ", min;
+      Leer >> n;
+
+      Mientras (n < min) Hacer;
+        Mostrar << n, "no es mayor a ", min, ". Intente nuevamente. ";
+        Leer >> n;
+      Fin_Mientras
+  Fin_Si
+Fin_Procedimiento

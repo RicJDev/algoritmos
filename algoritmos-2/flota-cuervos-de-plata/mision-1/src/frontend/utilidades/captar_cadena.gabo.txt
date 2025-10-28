@@ -1,0 +1,18 @@
+Procedimiento captar_cadena(E/S: c: Cadena, E: mensaje: Cadena);
+Incio
+  var continuar = 1: Booleano;
+
+  Mostrar << mensaje;
+  Leer >> c;
+
+  Mientras (continuar = 1) Hacer;
+    Mostrar << "Usted ha ingresado ", c;
+    Mostrar << "Desea cambiar? (0: no, 1: si) ";
+    Leer >> continuar;
+
+    Si (continuar = 1) Entonces;
+      Mostrar << "Ingrese nuevamente. ";
+      Leer >> c;
+    Fin_Si
+  Fin_Mientras
+Fin_Procedimiento
