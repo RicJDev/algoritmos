@@ -1,0 +1,70 @@
+Procedimiento captar_datos(
+  S:
+  nombres[total],
+  roles[total]: Cadena,
+  tripulacion[total],
+  edades[total]: Entero,
+  estaturas[total]: Real,
+  E:
+  cantidad_1,
+  cantidad_2,
+  cantidad_3,
+  cantidad_4,
+  cantidad_5,
+  total: Entero);
+Incio
+  var f: Real;
+  var i, n, min, max: Entero;
+  var c, mensaje: Cadena;
+  var c_1 = 0, c_2 = 0, c_3 = 0, c_4 = 0, c_5 = 0: Entero;
+
+  Para (i = 1 Hasta i = total) Hacer;
+    // Captando nombre
+    c = "";
+    mensaje = "Ingrese su nombre";
+    captar_cadena(c, mensaje);
+    Mostrar << captar_cadena;
+    nombres[i] = c;
+
+    // Captando rol
+    c = "";
+    mensaje = "Ingrese su rol en la tripulacion";
+    captar_cadena(c, mensaje);
+    Mostrar << captar_cadena;
+    roles[i] = c;
+
+    // Captando edad
+    Mostrar << "Ingrese su edad";
+
+    n = 0;
+    min = 1;
+    max = -1;
+    captar_entero(n, min, max);
+    Mostrar << captar_entero;
+    edades[i] = n;
+
+    // Captando tripulacion
+
+    Mostrar << "Elija su tripulacion.";
+    Mostrar << "1. Lunas Superiores";
+    Mostrar << "2. Piratas del Apocalipsis";
+    Mostrar << "3. Two Pieces";
+    Mostrar << "4. Pecados Capitales";
+    Mostrar << "5. Heroes de los 7 mares";
+
+    n = 0;
+    max = 5;
+    captar_entero(n, min, max);
+    Mostrar << captar_entero;
+    tripulacion[i] = n;
+
+    // Captando estatura
+    Mostrar << "Ingrese su estatura";
+
+    f = 0;
+    max = -1;
+    captar_real(f, min, max);
+    Mostrar << captar_real;
+    estaturas[i] = f;
+  Fin_Para
+Fin_Procedimiento
