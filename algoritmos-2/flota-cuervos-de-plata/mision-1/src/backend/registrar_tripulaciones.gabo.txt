@@ -1,4 +1,4 @@
-Procedimiento registar_tripulaciones(
+Procedimiento registrar_tripulaciones(
   E:
   tripulacion[total]: Entero;
   S:
