@@ -19,6 +19,9 @@ Incio
   t_a= 0; t_b= 0; t_c= 0;
   t_mayores= 0; t_menores= 0;
 
+  // Jesucristo bendito, odiare cuando deba refactorizar esto
+  // Ojala no tenga que
+
   Para (i = 1 Hasta i = total) Hacer;
     // ---------- Captando nombre ---------- 
     c = "";
