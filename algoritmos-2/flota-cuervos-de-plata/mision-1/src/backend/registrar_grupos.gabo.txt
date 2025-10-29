@@ -1,0 +1,3 @@
+Procedimiento registar_grupos();
+Inicio
+Fin_Procedimiento

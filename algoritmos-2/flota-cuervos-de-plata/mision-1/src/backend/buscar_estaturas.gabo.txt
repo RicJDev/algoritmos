@@ -1,0 +1,3 @@
+Procedimiento buscar_estaturas();
+Inicio
+Fin_Procedimiento
