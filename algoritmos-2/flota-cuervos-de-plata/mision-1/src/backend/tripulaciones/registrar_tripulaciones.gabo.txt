@@ -2,57 +2,36 @@ Procedimiento registar_tripulaciones(
   E:
   tripulacion[total]: Entero;
   S:
-  trip_1[cantidad_1],
-  trip_2[cantidad_2],
-  trip_3[cantidad_3],
-  trip_4[cantidad_4],
-  trip_5[cantidad_5]: Entero,
+  trip_1[t_1],
+  trip_2[t_2],
+  trip_3[t_3],
+  trip_4[t_4],
+  trip_5[t_5]: Entero,
   E:
-  cantidad_1,
-  cantidad_2,
-  cantidad_3,
-  cantidad_4,
-  cantidad_5,
   total: Entero);
 Inicio
   var i, t: Entero;
-  var c_1 = 1, c_2 = 1, c_3 = 1, c_4 = 1, c_5 = 1: Entero;
+  var i_1 = 1, i_2 = 1, i_3 = 1, i_4 = 1, i_5 = 1: Entero;
 
   Para (i = 1 hasta i = total) Hacer;
-    // ¡ADVERTENCIA DE MUCHO TEXTO!
-
-    // Dado que `i` es una posicion que no varia dentro de los arreglos
-    // y que se usan vectores paralelos, `i` puede servir como identificador
-    // de un tripulante. Para distribuir los tripulantes almacenamos
-    // los identificadores segun la tripulacion a la que pertenece
-
-    // Y dado que las dimensiones de los vectores de cada tripulacion dependen
-    // de la cantidad de tripulantes de estas en el vector principal, nunca se
-    // accede a un indice fuera de estos.
-
-    // Estos vectores lo que guardan es la posicion de esos tripulantes dentro
-    // de los arreglos generales como id's
-
-    // A lo mejor hay una mejor manera de hacer esto... pero la desconozco
-
     t = tripulacion[i];
 
     En_Caso (t > 0) Sea;
       Caso (t = 1);
-        trip_1[c_1] = i; // Lunas Superiores
-        c_1 = c_1 + 1;
+        trip_1[i_1] = i; // Lunas Superiores
+        i_1 = i_1 + 1;
       Caso (t = 2); 
-        trip_2[c_2] = i; // Piratas del Apocalipsis
-        c_2 = c_2 + 1;
+        trip_2[i_2] = i; // Piratas del Apocalipsis
+        i_2 = i_2 + 1;
       Caso (t = 3);
-        trip_3[c_3] = i; // Two Pieces
-        c_3 = c_3 + 1;
+        trip_3[i_3] = i; // Two Pieces
+        i_3 = i_3 + 1;
       Caso (t = 4);
-        trip_4[c_4] = i; // Pecados Capitales
-        c_4 = c_4 + 1;
+        trip_4[i_4] = i; // Pecados Capitales
+        i_4 = i_4 + 1;
       Otro_Caso
-        trip_5[c_5] = i; // Heroes de los 7 mares
-        c_5 = c_5 + 1;
+        trip_5[i_5] = i; // Heroes de los 7 mares
+        i_5 = i_5 + 1;
     Fin_Caso
   Fin_Para
 Fin_Procedimiento
