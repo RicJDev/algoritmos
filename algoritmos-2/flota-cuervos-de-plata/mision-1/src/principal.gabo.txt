@@ -1,12 +1,11 @@
 Algoritmo registros_piratas
 Inicio
-  var id_mas_alto, id_mas_bajito: Entero;
   var nombre_mas_alto, nombre_mas_bajito: Cadena;
   
   // Tamanos de los vectores
-  var total, cantidad_1, cantidad_2, cantidad_3, cantidad_4, cantidad_5: Entero;
-  var total_a, total_b, total_c: Entero;
-  var total_mayores, total_menores: Entero;
+  var total, t_1, t_2, t_3, t_4, t_5: Entero;
+  var t_a, t_b, t_c: Entero;
+  var t_mayores, t_menores: Entero;
 
   // Vectores con toda la data
   var estaturas[total]: Real;
@@ -14,11 +13,9 @@ Inicio
   var edades[total], tripulacion[total]: Entero;
 
   // Vectores para registar la info
-  var trip_1[cantidad_1], trip_2[cantidad_2],
-      trip_3[cantidad_3], trip_4[cantidad_4],
-      trip_5[cantidad_5]: Entero;
-  var grupo_a[total_a], grupo_b[total_b], grupo_c[total_c]: Entero;
-  var mayores[total_mayores], total_menores[total_menores]: Entero;
+  var trip_1[t_1], trip_2[t_2], trip_3[t_3], trip_4[t_4], trip_5[t_5]: Entero;
+  var grupo_a[t_a], grupo_b[t_b], grupo_c[t_c]: Entero;
+  var mayores[t_mayores], t_menores[t_menores]: Entero;
 
   captar_cantidad(total);
   Mostrar << captar_cantidad;
@@ -29,58 +26,39 @@ Inicio
     tripulacion[total],
     edades[total],
     estaturas[total],
+    t_1, t_2, t_3, t_4, t_5,
+    t_a, t_b, t_c,
+    t_mayores, t_menores,
     total);
   Mostrar << captar_datos;
 
-  contar_tripulaciones(
-    tripulacion[total];
-    cantidad_1,
-    cantidad_2,
-    cantidad_3,
-    cantidad_4,
-    cantidad_5,
-    total);
-
   registar_tripulaciones(
     tripulacion[total];
-    trip_1[cantidad_1],
-    trip_2[cantidad_2],
-    trip_3[cantidad_3],
-    trip_4[cantidad_4],
-    trip_5[cantidad_5]
-    cantidad_1,
-    cantidad_2,
-    cantidad_3,
-    cantidad_4,
-    cantidad_5,
+    trip_1[t_1],
+    trip_2[t_2], 
+    trip_3[t_3], 
+    trip_4[t_4], 
+    trip_5[t_5]
     total);
 
-  contar_grupos(
-    estaturas[total],
-    total_a,
-    total_b,
-    total_c, 
-    total,
-    id_mas_alto, 
-    id_mas_bajito);
+  // TODO
 
   registar_grupos(
     estaturas[total];
-    grupo_a[total_a],
-    grupo_b[total_b],
-    grupo_c[total_c],
-    total_a,
-    total_b, 
-    total_c,
+    grupo_a[t_a],
+    grupo_b[t_b], 
+    grupo_c[t_c],
     total);
-
-  contar_edades(edades[total], total_mayores, total_menores);
 
   registar_edades(
     edades[total],
-    mayores[total_mayores],
-    menores[total_menores],
-    total_mayores,
-    total_menores,
+    mayores[t_mayores],
+    menores[t_menores],
+    total);
+
+  buscar_estaturas(
+    estaturas[total],
+    nombre_mas_bajito,
+    nombre_mas_alto,
     total);
 Fin
