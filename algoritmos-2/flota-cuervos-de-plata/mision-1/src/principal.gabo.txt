@@ -12,10 +12,10 @@ Inicio
   var nombres[total], roles[total]: Cadena;
   var edades[total], tripulacion[total]: Entero;
 
-  // Vectores para registar la info
+  // Vectores para registrar la info
   var trip_1[t_1], trip_2[t_2], trip_3[t_3], trip_4[t_4], trip_5[t_5]: Entero;
   var grupo_a[t_a], grupo_b[t_b], grupo_c[t_c]: Entero;
-  var mayores[t_mayores], t_menores[t_menores]: Entero;
+  var mayores[5], t_menores[5]: Entero;
 
   captar_cantidad(total);
   Mostrar << captar_cantidad;
@@ -32,7 +32,7 @@ Inicio
     total);
   Mostrar << captar_datos;
 
-  registar_tripulaciones(
+  registrar_tripulaciones(
     tripulacion[total];
     trip_1[t_1],
     trip_2[t_2], 
@@ -41,19 +41,11 @@ Inicio
     trip_5[t_5]
     total);
 
-  // TODO
-
-  registar_grupos(
-    estaturas[total];
-    grupo_a[t_a],
-    grupo_b[t_b], 
-    grupo_c[t_c],
-    total);
-
-  registar_edades(
+  registrar_edades(
     edades[total],
-    mayores[t_mayores],
-    menores[t_menores],
+    tripulacion[total];
+    mayores[5],
+    menores[5],
     total);
 
   buscar_estaturas(
@@ -61,4 +53,35 @@ Inicio
     nombre_mas_bajito,
     nombre_mas_alto,
     total);
+
+  // ---------- Datos finales ----------
+
+  Mostrar << "Total de personas haciendo el registro: ", total;
+
+  Mostrar << "Total de personas mayores en general: ", t_mayores;
+  Mostrar << "Total de personas menores en general: ", t_menores;
+
+  Mostrar << "Total de personas mayores por embarcacion: ";
+  Mostrar << "Lunas Superiores: ", mayores[1];
+  Mostrar << "Piratas del Apocalipsis: ", mayores[2];
+  Mostrar << "Two Pieces: ", mayores[3];
+  Mostrar << "Pecados Capitales: ", mayores[4];
+  Mostrar << "Heroes de los 7 mares: ", mayores[5];
+
+  Mostrar << "Total de personas menores por embarcacion: ";
+  Mostrar << "Lunas Superiores: ", menores[1];
+  Mostrar << "Piratas del Apocalipsis: ", menores[2];
+  Mostrar << "Two Pieces: ", menores[3];
+  Mostrar << "Pecados Capitales: ", menores[4];
+  Mostrar << "Heroes de los 7 mares: ", menores[5];
+
+  Mostrar << "Total de tripulantes por embarcacion: ";
+  Mostrar << "Lunas Superiores: ", t_1;
+  Mostrar << "Piratas del Apocalipsis: ", t_2;
+  Mostrar << "Two Pieces: ", t_3;
+  Mostrar << "Pecados Capitales: ", t_4;
+  Mostrar << "Heroes de los 7 mares: ", t_5;
+
+  Mostrar << "El tripulante mas bajito se llama ", nombre_mas_bajito;
+  Mostrar << "El tripulante mas alto se llama ", nombre_mas_alto;
 Fin
