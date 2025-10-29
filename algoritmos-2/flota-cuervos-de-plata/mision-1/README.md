@@ -12,3 +12,25 @@ Como buenos piratas que somos, le vamos a ofrecer nueva tecnología de registro 
 - d. Cuántos son por tripulación, cuantos tripulantes hay en los grupos `A`, `B` Y `C`, y cuantas personas son haciendo el registro. 
 - e. Nombre del más alto, nombre del más pequeño
 - f. Mostrar resultados de las incógnitas
+
+## Representación del árbol de archivos
+
+Mi siempre bonito árbol de archivos:
+
+```
+.
+├── README.md
+└── src
+    ├── backend
+    │   ├── buscar_estaturas.gabo
+    │   ├── registrar_edades.gabo
+    │   └── registrar_tripulaciones.gabo
+    ├── frontend
+    │   ├── captar_cantidad.gabo
+    │   ├── captar_datos.gabo
+    │   └── utilidades
+    │       ├── captar_cadena.gabo
+    │       ├── captar_entero.gabo
+    │       └── captar_real.gabo
+    └── principal.gabo
+```
