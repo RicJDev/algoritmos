@@ -1,3 +1,36 @@
-Procedimiento buscar_estaturas();
+Procedimiento buscar_estaturas(
+  E:
+  estaturas[total]: Real,
+  nombres[total]: Cadena,
+  S:
+  nombre_mas_bajito,
+  nombre_mas_alto: Cadena,
+  E:
+  total: Entero);
 Inicio
+  var i: Entero;
+  var id_alto, id_bajo: Entero;
+  var v, ganador_alto, ganador_bajo: Real;
+
+  ganador_bajo = estaturas[1];
+  ganador_alto = estaturas[1];
+  id_bajo = 1;
+  id_alto = 1;
+
+  Para (i = 1 Hasta i = total) Hacer;
+    v = estaturas[i]
+
+    Si (v < ganador_bajo) Entonces;
+      ganador_bajo = v;
+      id_bajo = i;
+    Fin_Si
+
+    Si (v > ganador_alto) Entonces;
+      ganador_alto = v;
+      id_alto = i;
+    Fin_Si
+  Fin_Para
+
+  nombre_mas_alto = nombres[id_alto];
+  nombre_mas_bajito = nombres[id_bajo];
 Fin_Procedimiento
