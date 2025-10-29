@@ -5,46 +5,50 @@ Procedimiento captar_datos(
   tripulacion[total],
   edades[total]: Entero,
   estaturas[total]: Real,
+  t_1, t_2, t_3, t_4, t_5,
+  t_a, t_b, t_c,
+  t_mayores, t_menores: Entero,
   E:
-  cantidad_1,
-  cantidad_2,
-  cantidad_3,
-  cantidad_4,
-  cantidad_5,
   total: Entero);
 Incio
   var f: Real;
   var i, n, min, max: Entero;
   var c, mensaje: Cadena;
-  var c_1 = 0, c_2 = 0, c_3 = 0, c_4 = 0, c_5 = 0: Entero;
+
+  t_1= 0; t_2= 0; t_3= 0; t_4= 0; t_5= 0;
+  t_a= 0; t_b= 0; t_c= 0;
+  t_mayores= 0; t_menores= 0;
 
   Para (i = 1 Hasta i = total) Hacer;
-    // Captando nombre
+    // ---------- Captando nombre ---------- 
     c = "";
     mensaje = "Ingrese su nombre";
     captar_cadena(c, mensaje);
     Mostrar << captar_cadena;
     nombres[i] = c;
 
-    // Captando rol
+    // ---------- Captando rol ----------
     c = "";
     mensaje = "Ingrese su rol en la tripulacion";
     captar_cadena(c, mensaje);
     Mostrar << captar_cadena;
     roles[i] = c;
 
-    // Captando edad
+    // ---------- Captando edad ----------
     Mostrar << "Ingrese su edad";
 
-    n = 0;
-    min = 1;
-    max = -1;
+    n = 0; min = 1; max = -1;
     captar_entero(n, min, max);
     Mostrar << captar_entero;
     edades[i] = n;
 
-    // Captando tripulacion
+    Si (n >= 18) Entonces;
+      t_mayores = t_mayores + 1;
+      Sino
+        t_menores = t_menores + 1;
+    Fin_Si
 
+    // ---------- Captando tripulacion ----------
     Mostrar << "Elija su tripulacion.";
     Mostrar << "1. Lunas Superiores";
     Mostrar << "2. Piratas del Apocalipsis";
@@ -52,19 +56,43 @@ Incio
     Mostrar << "4. Pecados Capitales";
     Mostrar << "5. Heroes de los 7 mares";
 
-    n = 0;
-    max = 5;
+    n = 0; min = 1; max = 5;
     captar_entero(n, min, max);
     Mostrar << captar_entero;
     tripulacion[i] = n;
 
-    // Captando estatura
-    Mostrar << "Ingrese su estatura";
+    En_Caso (n > 0) Sea;
+      Caso (n = 1);
+        t_1 = t_1 + 1;
+      Caso (n = 2); 
+        t_2 = t_2 + 1;
+      Caso (n = 3);
+        t_3 = t_3 + 1;
+      Caso (n = 4);
+        t_4 = t_4 + 1;
+      Otro_Caso
+        t_5 = t_5 + 1;
+    Fin_Caso
 
-    f = 0;
-    max = -1;
+    // ---------- Captando estatura ----------
+    Mostrar << "Ingrese su estatura en metros";
+
+    f = 0; min = 0.6; max = 2.3;
     captar_real(f, min, max);
     Mostrar << captar_real;
     estaturas[i] = f;
+
+    Si (f > 1.8) Entonces;
+      Mostrar << "Pertenece al grupo `B`. ";
+      t_b = t_b + 1;
+    Fin_Si
+    Si (f <= 1.8 And f >= 1.5) Entonces;
+      Mostrar << "Pertenece al grupo `A`. ";
+      t_a = t_a + 1;
+    Fin_Si
+    Si (f < 1.5) Entonces;
+      Mostrar << "Pertenece al grupo `C`. ";
+      t_c = t_c + 1;
+    Fin_Si
   Fin_Para
 Fin_Procedimiento
