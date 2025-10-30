@@ -1,5 +1,5 @@
 Procedimiento captar_real(E/S: n: Real, E: min, max: Entero);
-Incio
+Inicio
   Si (max != -1) Entonces;
     Mostrar << "Ingrese un numero mayor a ", min, " y menor a ", max;
     Leer >> f;

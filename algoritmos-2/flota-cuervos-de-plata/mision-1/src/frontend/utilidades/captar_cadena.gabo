@@ -1,5 +1,5 @@
 Procedimiento captar_cadena(E/S: c: Cadena, E: mensaje: Cadena);
-Incio
+Inicio
   var continuar = 1: Booleano;
 
   Mostrar << mensaje;

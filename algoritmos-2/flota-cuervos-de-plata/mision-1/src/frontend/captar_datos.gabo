@@ -10,7 +10,7 @@ Procedimiento captar_datos(
   t_mayores, t_menores: Entero,
   E:
   total: Entero);
-Incio
+Inicio
   var f: Real;
   var i, n, min, max: Entero;
   var c, mensaje: Cadena;
