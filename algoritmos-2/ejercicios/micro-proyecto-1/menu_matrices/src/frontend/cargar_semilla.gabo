@@ -1,0 +1,10 @@
+Procedimiento cargar_semilla(S: semilla: Entero);
+Inicio
+  Mostrar << "Ingrese un tamano para la matriz";
+  Leer >> semilla;
+
+  Mientras (semilla < 2 Or semilla > 500) Hacer;
+    Mostrar << semilla, "no es un numero valido. ";
+    Leer >> semilla;
+  Fin_Mientras
+Fin_Procedimiento

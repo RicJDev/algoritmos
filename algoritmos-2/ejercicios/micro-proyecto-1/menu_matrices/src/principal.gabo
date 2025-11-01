@@ -1,0 +1,33 @@
+Algoritmo gelatina_de_patilla
+Inicio
+  var R: Booleano;
+  var opc: Entero;
+  var patilla[semilla][semilla], semilla, i: Entero;
+  var patilla_2[semilla][semilla], patilla_3[semilla][semilla]: Entero;
+
+  cargar_semilla(semilla);
+  Mostrar << cargar_semilla;
+
+  Repetir
+    cargar_patilla(patilla[semilla], semilla, i);
+    Mostrar << cargar_patilla;
+
+    Mientras (condicion) Hacer;
+      mordida(opc);
+      Mostrar << mordida;
+
+      En_Caso (mordida > 0) Sea;
+        Caso(mordida = 1);
+          // ...
+        Caso(mordida = 2);
+          // ...
+        Caso(mordida = 3);
+          // ...
+        Otro_Caso
+          // ...
+      Fin_Caso
+    Fin_Mientras
+
+    Hasta(R = 0);
+  Fin_Repetir
+Fin
