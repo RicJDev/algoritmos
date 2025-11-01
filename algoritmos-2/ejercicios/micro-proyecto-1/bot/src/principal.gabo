@@ -1,0 +1,54 @@
+Algoritmo GaboMaps
+Inicio
+  // Mapa
+  var n = 500: Entero;
+  var mapa[n][n]: Entero;
+
+  // Informacion de las islas
+  var coordenadas[n][2]: Entero;
+  var nombres[n], descripciones[n]: Cadena;
+
+  // Rutas y distancias
+  var rutas[20][2], distancias[20]: Entero;
+
+  // Interaccion del usuario con el menu
+  var opc: Entero;
+  var ubicacion[2], destino[2]: Entero;
+
+  cargar_islas(coordenadas[n][2], nombres[n], descripciones[n], n);
+  cargar_rutas(rutas[20][2]);
+
+  Mientras (opc != 6) Hacer;
+    ubicacion(coordenadas[n][2], nombres[n], ubicacion[2], n);
+    Mostrar << ubicacion;
+
+    pantalla(opc);
+    Mostrar << pantalla;
+
+    En_Caso (opc > 0) Sea;
+      Caso(opc = 1);
+        Mostrar << "Igresando nueva ubicacion...";
+        ubicacion(ubicacion[2]);
+        Mostrar << ubicacion;
+      Caso(opc = 2);
+        // Listar los lugares
+        lista_lugares();
+      Caso(opc = 3);
+        // Encontrar un camino desde tu ubicacion
+        // 1. Obtener el destino
+        // 2. Utilizar el algoritmo de Dijkstra para encontrar el camino
+        // 3. Almacenar las instrucciones
+        // 4. Entregar las instrucciones en formato de texto
+      Caso(opc = 4);
+        // Ir a un lugar aleatorio
+        // 1. Obtener dos numeros aleatorios
+        // 2. Repetir el procedimiento anterior con esos numeros
+      Caso(opc = 5);
+        // Ver informacion de tu ubicacion actual
+        ver_info(mapa_lugares[n][n], n, ubicacion[2]);
+        Mostrar << ver_info;
+      Otro_Caso
+        Mostrar << "Que tenga buen viaje! Gracias por usar GaboMaps!";
+    Fin_Caso
+  Fin_Mientras
+Fin

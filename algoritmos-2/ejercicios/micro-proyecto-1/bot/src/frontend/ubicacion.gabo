@@ -1,0 +1,24 @@
+Procedimiento ubicacion(
+  E:
+  coordenadas[n][2]: Entero,
+  nombres[n],
+  n: Entero,
+  S:
+  ubicacion[2]
+  );
+Inicio
+  var i, opc_isla: Entero;
+
+  Mostrar << "¡Hola! Dime en cuál de estas islas estas: ";
+  Para (i = 1 Hasta i = n) Hacer;
+    // Mostramos la i y el nombre de la isla
+    Mostrar << i, ". ", nombres[i]; // "1. Isla Del Muerto" por ejemplo
+  Fin_Si
+
+  Mientras (opc_isla < 1 Or opc_isla > n) Hacer;
+    Mostrar << "Esa isla no existe. ";
+    Leer >> opc_isla;
+  Fin_Mientras
+
+  // opc_isla sera una de las n islas guardadas
+Fin_Procedimiento

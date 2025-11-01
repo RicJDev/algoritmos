@@ -1,0 +1,4 @@
+Procedimiento cargar_rutas(E/S: rutas[20][2]: Entero);
+Inicio
+  // ...
+Fin_Procedimiento
